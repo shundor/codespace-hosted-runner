@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: example
 
 # Controls when the workflow will run
 on:
@@ -12,7 +12,11 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: codespace-runner
+    runs-on: self-hosted
+    permissions:
+      actions: read
+      contents: read
+      security-events: write    
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
