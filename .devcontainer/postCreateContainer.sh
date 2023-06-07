@@ -9,7 +9,7 @@ export GITHUB_TOKEN=$RUNNER_TOKEN
 echo "Creating runner"
 gh runner create --name codespace-runner $EXTRA_ARGS >runner-creation.log
 echo "Starting runner"
-/bin/bash ./codespace-runner/run.sh &
+/bin/bash ./codespace-runner/run.sh >runner.log
 # Clean up
 echo "Initiate cleanup"
 unset GITHUB_TOKEN
