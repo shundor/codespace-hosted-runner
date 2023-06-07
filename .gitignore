@@ -1,3 +1,4 @@
 runner_token.txt
 original_token.txt
-actions-runner/
+codespace-runner/
+remove_runner.sh
