@@ -3,5 +3,5 @@
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  "postStartCommand": "gh ext install Dedac/gh-runner"
+  "postCreateCommand": "/bin/chmod +x /workspaces/github-playground/.devcontainer/postCreateContainer.sh && /workspaces/github-playground/.devcontainer/postCreateContainer.sh"
 }
