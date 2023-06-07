@@ -7,9 +7,9 @@ echo $RUNNER_TOKEN >runner_token.txt
 gh auth login --with-token < runner_token.txt
 export GITHUB_TOKEN=$RUNNER_TOKEN
 echo "Creating runner"
-gh runner create --name codespace-runner $EXTRA_ARGS >runner.log
+gh runner create --name codespace-runner $EXTRA_ARGS >runner-creation.log
 echo "Starting runner"
-./codespace-runner/run.sh &
+gh runner start --name codespace-runner $EXTRA_ARGS >runner.log
 # Clean up
 echo "Initiate cleanup"
 unset GITHUB_TOKEN
