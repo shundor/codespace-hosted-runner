@@ -3,5 +3,5 @@
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  "postCreateCommand": "/bin/chmod +x /workspaces/github-playground/.devcontainer/postCreateContainer.sh && /workspaces/github-playground/.devcontainer/postCreateContainer.sh"
+  "postCreateCommand": "/bin/chmod +x /workspaces/codespace-hosted-runner/.devcontainer/postCreateContainer.sh && /workspaces/codespace-hosted-runner/.devcontainer/postCreateContainer.sh"
 }
