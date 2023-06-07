@@ -14,3 +14,5 @@ unset GITHUB_TOKEN
 gh auth login --with-token < original_token.txt
 rm original_token.txt
 rm runner_token.txt
+echo "gh runner remove --name codespace-runner" >remove_runner.sh
+chmod +x remove_runner.sh
